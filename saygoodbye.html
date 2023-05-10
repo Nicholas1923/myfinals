@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <title>My Website</title>
    <body style="background-color:#000000;">
   <style>
- 
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -32,20 +33,30 @@ header h1 {
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   list-style: none;
   display: flex;
 }
+
 
 nav li {
   margin: 0 10px;
 }
 
 nav a {
+ padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
   color: #fff;
   text-decoration: none;
+  
 }
+
 article {
   margin: 10px;
   padding: 10px;
@@ -57,7 +68,7 @@ article {
   background-color:white;
   color: black;
   font-family: Courier, monospace;
-  font-size: 16px; /* adjust the font size to your liking */
+  font-size: 16px; 
 }
 
 
@@ -115,18 +126,42 @@ p {
   text-justify: inter-word;
 }
 
+.my-button {
+      padding: 0px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .my-button:hover {
+      background-color: #555;
+    }
+
   </style>
+  <script>
+    // JavaScript code
+    function showPrompt() {
+      var visitorName = prompt("What is on your mind??");
+      if (visitorName != null) {
+        alert("Your thought is, " + visitorName + " wow!");
+      }
+    }
+  </script>
 </head>
 <body>
 
   <header>
    
-        <h1><font face = "courier"><strong> Say Goodbye</h1></strong></font>
+        <h1><font face = "courier"><strong>say goodbye</h1></strong></font>
     <nav>
       <ul>
         <li><a href="MAIN.html">Home</a></li>
         <li><a href="ABOUT NEW.html">About</a></li>
         <li><a href="contactttttt.html">Contact</a></li>
+		<li><button class="my-button" onclick="showPrompt()">Enter a thought!</button></li>
       </ul>
     </nav>
   </header>
